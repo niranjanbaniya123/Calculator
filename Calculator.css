@@ -1,0 +1,203 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+
+
+
+ }
+
+ body {
+     height: 100vh;
+     width: 100%;
+     background: linear-gradient(#2196f3, #e91e63);
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     align-items: center;
+
+ }
+
+ .container {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: transparent;
+     backdrop-filter: blur(20px);
+    }
+ 
+ .calc {
+    height: 450px;
+    width: 292px;
+     
+     box-shadow: 6px 6px 13px #fff,
+     6px 6px 13px rgba(0, 0, 0, .16);
+     border-radius: 28px;
+     padding: 16px;
+     display: grid;
+     grid-template-columns: repeat(4, 65px);
+     background: transparent;
+     backdrop-filter: blur(20px);
+     
+    }
+    
+    .calc button:hover {
+        background: rgb(235, 233, 153);
+        cursor: pointer;
+        /* backdrop-filter: blur(20px); */
+    }
+    
+    input {
+        grid-column: span 4;
+        height: 68px;
+        width: 258px;
+        box-shadow: inset -6px -6px 13px #fff,
+        inset 6px 6px 13px rgba(0, 0, 0, .16);
+        border: none;
+        border-radius: 32px;
+        color: rgb(26, 25, 25);
+        text-align: end;
+        margin: 40px, 0px, 30px, 0px;
+        padding: 20px;
+        font-size: 40px;
+        background: transparent;
+        /* backdrop-filter: blur(20px); */
+    }
+    
+    button {
+        box-shadow: inset 6px 6px 13px #fff,
+        6px 6px 13px rgba(0, 0, 0, .16);
+        ;
+        border: none; 
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        background: transparent;
+        /* backdrop-filter: blur(20px); */
+        
+
+ }
+
+ .equal {
+     width: 120px;
+     border-radius: 42px;
+     box-shadow: inset 6px 6px 13px #fff,
+         6px 6px 13px rgba(0, 0, 0, .16);
+
+
+
+ }
+
+ /* .bubbles {
+     position: absolute;
+     bottom: -100px;
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     backdrop-filter: blur(20px); 
+ }
+
+ .bubbles span {
+     height: 60px;
+     width: 60px;
+     background: rgba(255, 255, 255, 0.1);
+     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+     position: relative;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     animation: move 10s linear infinite;
+     overflow: hidden;
+ }
+
+ @keyframes move {
+     100% {
+         transform: translateY(-90vh);
+
+     }
+ }
+
+ .bubbles span.one {
+     animation-delay: 2.2s;
+     transform: scale(2.15);
+ }
+
+ .bubbles span.tow {
+     animation-delay: 3.5s;
+     transform: scale(1.55);
+ }
+
+ .bubbles span.three {
+     animation-delay: 0.2s;
+     transform: scale(0.35);
+ }
+
+ .bubbles span.four {
+     animation-delay: 6s;
+     transform: scale(2.15);
+ }
+
+ .bubbles span.five {
+     animation-delay: 7s;
+     transform: scale(0.5);
+ }
+
+ .bubbles span.six {
+     animation-delay: 4s;
+     transform: scale(2.5);
+ }
+
+ .bubbles span.seven {
+     animation-delay: 3s;
+     transform: scale(1.5);
+ }
+
+ .bubbles span::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 60px;
+     width: 40%;
+     transform: skew(45deg) translateX(150px);
+     background: rgba(255, 255, 255, 0.15);
+     animation: mirror 3s linear infinite;
+ }
+
+ @keyframes mirror {
+     100% {
+         transform: translateX(-450px);
+     }
+ }
+
+ .bubbles span.one:before {
+     animation-delay: 1.5s;
+ }
+
+ .bubbles span.tow:before {
+     animation-delay: 3.5s;
+ }
+
+ .bubbles span.three:before {
+     animation-delay: 2.5s;
+ }
+
+ .bubbles span.four:before {
+     animation-delay: 7.5ss;
+ }
+
+ .bubbles span.five:before {
+     animation-delay: 4.5s;
+ }
+
+ .bubbles span.six:before {
+     animation-delay: 0.5s;
+ }
+
+ .bubbles span.seven:before {
+     animation-delay: 6s;
+ } */
